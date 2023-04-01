@@ -1,9 +1,7 @@
-interface Props {}
-
-export const App = ({}: Props) => {
+export const App = () => {
   return (
     <div
-      className="app"
+      className='app'
       style={{
         display: 'flex',
         justifyContent: 'center',
@@ -19,7 +17,7 @@ export const App = ({}: Props) => {
         }}
       >
         <h3>Project template by e7f3</h3>
-        <ul style={{listStylePosition: 'inside'}}>
+        <ul style={{ listStylePosition: 'inside' }}>
           <li>React</li>
           <li>Typescript</li>
           <li>Webpack</li>

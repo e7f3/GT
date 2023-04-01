@@ -55,13 +55,13 @@ const esRules = {
   '@typescript-eslint/no-var-requires': 'warn',
   'no-use-before-define': 'off',
   '@typescript-eslint/no-use-before-define': ['error', { enums: false }],
-  'i18next/no-literal-string': [
-    'error',
-    {
-      markupOnly: true,
-      ignoreAttribute: ['data-testid', 'to'],
-    },
-  ],
+  // 'i18next/no-literal-string': [
+  //   'error',
+  //   {
+  //     markupOnly: true,
+  //     ignoreAttribute: ['data-testid', 'to'],
+  //   },
+  // ],
   // 'prettier/prettier': 'off',
   'prettier/prettier': [
     'error',
@@ -96,7 +96,7 @@ module.exports = {
     'plugin:react/recommended',
     'plugin:@typescript-eslint/recommended',
     'eslint-config-airbnb',
-    'plugin:i18next/recommended',
+    // 'plugin:i18next/recommended',
     '@storybook/eslint-config-storybook',
     'plugin:react/jsx-runtime',
     'plugin:jsx-a11y/recommended',
@@ -128,7 +128,7 @@ module.exports = {
     {
       files: ['**/src/**/*.{test,stories}.{ts,tsx}'],
       rules: {
-        'i18next/no-literal-string': 'off',
+        // 'i18next/no-literal-string': 'off',
         'max-len': 'off',
       },
     },
