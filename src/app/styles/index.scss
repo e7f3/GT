@@ -1,0 +1,22 @@
+@import './reset';
+@import './fonts/googleFonts';
+@import './variables/global';
+
+body {
+  color: var(--primary-color);
+  font: var(--font-m);
+}
+
+.app {
+  min-height: 100vh;
+
+  background-color: var(--primary-bg-color);
+}
+
+.page-content {
+  display: flex;
+}
+
+.page {
+  flex-grow: 1;
+}
