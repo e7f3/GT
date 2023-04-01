@@ -24,16 +24,16 @@ Before getting started, make sure you have the following software installed on y
 
 1. Clone the repository:
 
-git clone https://github.com/e7f3/template-react.git
+`git clone https://github.com/e7f3/template-react.git`
 
 
 2. Install dependencies:
 
 With Yarn:
-yarn install
+`yarn install`
 
 With npm:
-npm install
+`npm install`
 
 
 ### Development
@@ -41,10 +41,10 @@ npm install
 To start the development server, run the following command:
 
 With Yarn:
-yarn start
+`yarn start`
 
 With npm:
-npm start
+`npm start`
 
 Open your browser and navigate to `http://localhost:3000`. The application will automatically reload when you make changes to the code.
 
@@ -53,20 +53,20 @@ Open your browser and navigate to `http://localhost:3000`. The application will 
 To create a development build, run the following command:
 
 With Yarn:
-yarn build:dev
+`yarn build:dev`
 
 With npm:
-npm run build:dev
+`npm run build:dev`
 
 ### Building for Production
 
 To create a production build, run the following command:
 
 With Yarn:
-yarn build:prod
+`yarn build:prod`
 
 With npm:
-npm run build:prod
+`npm run build:prod`
 
 The compiled files will be located in the `dist` folder.
 
@@ -75,30 +75,30 @@ The compiled files will be located in the `dist` folder.
 To run tests using Jest, execute the following command:
 
 With Yarn:
-yarn test:unit
+`yarn test:unit`
 
 With npm:
-npm run test:unit
+`npm run test:unit`
 
 ### Storybook
 
 To start Storybook, execute the following command:
 
 With Yarn:
-yarn storybook
+`yarn storybook`
 
 With npm:
-npm run storybook
+`npm run storybook`
 
 This will start Storybook at http://localhost:6006.
 
 To create a static version of your Storybook for deployment, execute the following command:
 
 With Yarn:
-yarn storybook:build
+`yarn storybook:build`
 
 With npm:
-npm run storybook:build
+`npm run storybook:build`
 
 This command will generate a static version of your Storybook in the storybook-static folder, which you can then deploy to any static site hosting service.
 
@@ -107,34 +107,34 @@ This command will generate a static version of your Storybook in the storybook-s
 To run TypeScript linting, execute the following command:
 
 With Yarn:
-yarn lint:ts
+`yarn lint:ts`
 
 With npm:
-npm run lint:ts
+`npm run lint:ts`
 
 To automatically fix TypeScript linting issues, execute the following command:
 
 With Yarn:
-yarn lint:ts:fix
+`yarn lint:ts:fix`
 
 Winh npm:
-npm run lint:ts:fix
+`npm run lint:ts:fix`
 
 To run SCSS linting, execute the following command:
 
 With Yarn:
-yarn lint:scss
+`yarn lint:scss`
 
 With npm:
-npm run lint:scss
+`npm run lint:scss`
 
 To automatically fix SCSS linting issues, execute the following command:
 
 With Yarn:
-yarn lint:scss:fix
+`yarn lint:scss:fix`
 
 With npm:
-npm run lint:scss:fix
+`npm run lint:scss:fix`
 
 
 ### License
