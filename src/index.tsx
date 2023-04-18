@@ -1,9 +1,12 @@
 import 'app/styles/index.scss'
 
-import { render } from 'react-dom'
+import * as ReactDOMClient from 'react-dom/client'
 
 import { App } from 'app/App'
+import 'shared/config/i18n/i18n'
 
-const root = document.getElementById('root')
+const container =
+  document.getElementById('root') || document.createElement('div')
+const root = ReactDOMClient.createRoot(container)
 
-render(<App />, root)
+root.render(<App />)
