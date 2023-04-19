@@ -1,0 +1,122 @@
+.Button {
+  --border-width: 2px;
+  position: relative;
+  z-index: 1;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding: 8px 16px;
+
+  font-size: var(--font-size-xs);
+  font-family: var(--font-family-extra);
+  line-height: var(--line-height-xs);
+
+  border-style: solid;
+  border-width: var(--border-width);
+  border-image-slice: 1;
+
+  cursor: pointer;
+
+  transform: translate(0);
+  transform-style: preserve-3d;
+
+  transition: opacity 0.2s ease-in, transform 0.05s ease-in,
+    clip-path 0.05s ease-in, background-clip 0.05s ease-in;
+}
+
+.Button:active {
+  transform: translate(5px, 4px);
+}
+
+.Button:focus {
+  outline: none;
+}
+
+.defaultTheme {
+  color: transparent;
+  font-weight: 400;
+
+  background-clip: text;
+  // stylelint-disable-next-line
+  -webkit-background-clip: text;
+}
+
+.Button::after {
+  --x: 11px;
+  --y: 9px;
+  --s: 0px;
+  position: absolute;
+  inset: calc(-1 * var(--s) - var(--border-width));
+  content: '';
+
+  opacity: 0;
+  transform: translate(var(--x), var(--y));
+
+  clip-path: polygon(
+    -100vmax -100vmax,
+    100vmax -100vmax,
+    100vmax 100vmax,
+    -100vmax 100vmax,
+    -100vmax -100vmax,
+    calc(0px + var(--s) - var(--x)) calc(0px + var(--s) - var(--y)),
+    calc(0px + var(--s) - var(--x)) calc(100% - var(--s) - var(--y)),
+    calc(100% - var(--s) - var(--x)) calc(100% - var(--s) - var(--y)),
+    calc(100% - var(--s) - var(--x)) calc(0px + var(--s) - var(--y)),
+    calc(0px + var(--s) - var(--x)) calc(0px + var(--s) - var(--y))
+  );
+  
+  transition: opacity 0.2s ease-in, transform 0.05s ease-in,
+    clip-path 0.05s ease-in, background-clip 0.05s ease-in;
+}
+
+.Button:hover::after {
+  opacity: 1;
+}
+
+.Button:active::after {
+  --x: 5px;
+  --y: 4px;
+}
+
+.invertedTheme {
+  color: var(--secondary-color);
+  font-weight: 700;
+
+  background-clip: padding-box;
+}
+
+.Button.invertedTheme::after {
+  border-style: solid;
+  border-width: var(--border-width);
+  border-image-slice: 1;
+
+  background-clip: text;
+  // stylelint-disable-next-line
+  -webkit-background-clip: text;
+}
+
+.defaultColorScheme {
+  border-image-source: var(--gradient-3);
+
+  background-image: var(--gradient-3);
+}
+
+.defaultColorScheme::after {
+  border-image-source: var(--gradient-3);
+
+  background-image: var(--gradient-3);
+}
+
+.alternativeColorScheme {
+  border-image-source: var(--gradient-1);
+
+  background-image: var(--gradient-1);
+}
+
+.alternativeColorScheme::after {
+  border-image-source: var(--gradient-1);
+
+  background-image: var(--gradient-1);
+}

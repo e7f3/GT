@@ -1,17 +1,50 @@
 :root {
   // Fonts
-  --font-family-main: 'Poppins', sans-serif;
-  --font-size-m: 16px;
-  --line-height-m: 24px;
-  --font-m: var(--font-size-m) / var(--line-height-m) var(--font-family-main);
-  --font-size-l: 24px;
-  --line-height-l: 32px;
-  --font-l: var(--font-size-l) / var(--line-height-l) var(--font-family-main);
-  --font-size-xl: 32px;
-  --line-height-xl: 40px;
-  --font-xl: var(--font-size-xl) / var(--line-height-xl) var(--font-family-main);
+  --font-family-main: 'Ubuntu', sans-serif;
+  --font-family-extra: 'Ubuntu Mono' monospace;
+  --font-size-xs: 15px;
+  --line-height-xs: 15px;
+  --font-extra-xs: var(--font-size-xs) / var(--line-height-xs)
+    var(--font-family-extra);
+  --font-size-s: 20px;
+  --line-height-s: 20px;
+  --font-extra-s: var(--font-size-s) / var(--line-height-s)
+    var(--font-family-extra);
+  --font-size-m: 30px;
+  --line-height-m: 30px;
+  --font-extra-m: var(--font-size-m) / var(--line-height-m)
+    var(--font-family-extra);
+  --font-main-m: var(--font-size-m) / var(--line-height-m)
+    var(--font-family-main);
+  --font-size-l: 40px;
+  --line-height-l: 40px;
+  --font-main-l: var(--font-size-l) / var(--line-height-l)
+    var(--font-family-main);
+  --font-size-xl: 60px;
+  --line-height-xl: 60px;
+  --font-main-xl: var(--font-size-xl) / var(--line-height-xl)
+    var(--font-family-main);
+
+  // Gaps
+  --gap-xxs: 15px;
+  --gap-xs: 30px;
+  --gap-s: 40px;
+  --gap-m: 60px;
+  --gap-l: 80px;
+  --gap-xl: 120px;
+  --gap-xxl: 185px;
 
   // Colors
-  --primary-bg-color: #faf6f6;
-  --primary-color: #2d2a32;
+  --primary-bg-color: #000;
+  --primary-color: #fff;
+  --secondary-color: #000;
+  --extra-color: #22e335;
+
+  // Gradients
+  --gradient-1: linear-gradient(94.59deg, #0f6 0.84%, #0091e2 75.46%);
+  --gradient-2: linear-gradient(90deg, #0ff -32.31%, #ff18e8 139.23%);
+  --gradient-3: linear-gradient(94.35deg, #00ff47 -10.47%, #6d00c2 102.48%);
+  --gradient-4: linear-gradient(65.29deg, #ffec41 14.23%, #ff6b00 68.42%);
+  --gradient-5: linear-gradient(180deg, #14ff00 0%, #db01ff 100%);
+  --gradient-6: linear-gradient(93.03deg, #00ff19 19.64%, #940097 74.47%);
 }
