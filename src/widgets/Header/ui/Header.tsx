@@ -16,9 +16,7 @@ export const Header: FC = memo(() => {
         <source type='image/png' srcSet={sourceSrc} />
         <img className={classes.HeaderLogo} src={LogoX1} alt='GTIT' />
       </picture>
-
       <Navbar className={classes.HeaderNavbar} />
-
       <LanguageSwitcher className={classes.HeaderSwitcher} />
     </div>
   )
