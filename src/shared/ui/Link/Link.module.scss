@@ -1,0 +1,62 @@
+.Link {
+  position: relative;
+
+  color: var(--primary-color);
+  font: var(--font-extra-xxs);
+  font-weight: 400;
+  white-space: nowrap;
+  text-decoration: none;
+
+  background: var(--gradient-7);
+  background-clip: padding-box;
+  background-clip: text;
+  // stylelint-disable-next-line
+  -webkit-background-clip: text;
+
+  transition: color var(--transition-duration-normal) var(--transition-function);
+}
+
+.Link:hover {
+  color: transparent;
+}
+
+.Link::before {
+  position: absolute;
+  top: 0;
+  left: -5px;
+  bottom: 0;
+  content: '|';
+
+  color: inherit;
+  font: inherit;
+
+  background: inherit;
+
+  opacity: 0;
+
+  transition: opacity var(--transition-duration-normal)
+    var(--transition-function);
+}
+
+.Link:hover::before {
+  opacity: 1;
+}
+
+@media only screen and (min-width: 744px) {
+  .Link {
+    font: var(--font-extra-xs);
+  }
+}
+
+@media only screen and (min-width: 1920px) {
+  .Link {
+    font: var(--font-extra-s);
+  }
+}
+
+@media only screen and (min-width: 2560px) {
+  .Link {
+    font-size: 23px;
+    line-height: 23px;
+  }
+}

@@ -1,0 +1,32 @@
+.Input {
+  $background-color: var(--primary-color);
+
+  padding: 8px 24px;
+
+  color: var(--primary-color);
+  font-weight: 700;
+  font-size: var(--font-size-xs);
+  font-family: var(--font-family-main);
+  line-height: 21px;
+
+  border-radius: 1px;
+
+  background-color: var(--primary-color-op30);
+}
+
+.Input::placeholder {
+  opacity: 0.8;
+}
+
+.Input:focus {
+  outline: none;
+}
+
+@media only screen and (min-width: 1920px) {
+  .Input {
+    padding: 12px 25px;
+    
+    font-size: var(--font-size-s);
+    line-height: 23px;
+  }
+}

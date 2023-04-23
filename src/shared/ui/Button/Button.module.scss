@@ -9,9 +9,7 @@
 
   padding: 8px 16px;
 
-  font-size: var(--font-size-xs);
-  font-family: var(--font-family-extra);
-  line-height: var(--line-height-xs);
+  font: var(--font-extra-xxs);
 
   border-style: solid;
   border-width: var(--border-width);
@@ -22,8 +20,11 @@
   transform: translate(0);
   transform-style: preserve-3d;
 
-  transition: opacity 0.2s ease-in, transform 0.05s ease-in,
-    clip-path 0.05s ease-in, background-clip 0.05s ease-in;
+  transition: opacity var(--transition-duration-normal)
+      var(--transition-function),
+    transform var(--transition-duration-fast) var(--transition-function),
+    clip-path var(--transition-duration-fast) var(--transition-function),
+    background-clip var(--transition-duration-fast) var(--transition-function);
 }
 
 .Button:active {
@@ -66,9 +67,12 @@
     calc(100% - var(--s) - var(--x)) calc(0px + var(--s) - var(--y)),
     calc(0px + var(--s) - var(--x)) calc(0px + var(--s) - var(--y))
   );
-  
-  transition: opacity 0.2s ease-in, transform 0.05s ease-in,
-    clip-path 0.05s ease-in, background-clip 0.05s ease-in;
+
+  transition: opacity var(--transition-duration-normal)
+      var(--transition-function),
+    transform var(--transition-duration-fast) var(--transition-function),
+    clip-path var(--transition-duration-fast) var(--transition-function),
+    background-clip var(--transition-duration-fast) var(--transition-function);
 }
 
 .Button:hover::after {
@@ -119,4 +123,32 @@
   border-image-source: var(--gradient-1);
 
   background-image: var(--gradient-1);
+}
+
+@media only screen and (min-width: 744px) {
+  .Button {
+    font: var(--font-extra-xs);
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .Button {
+    font: var(--font-extra-s);
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .Button {
+    font-size: 23px;
+    line-height: 23px;
+  }
+}
+
+@media only screen and (min-width: 1920px) {
+  .Button {
+    padding: 10px 20px;
+
+    font-size: 25px;
+    line-height: 25px;
+  }
 }

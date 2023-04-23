@@ -2,8 +2,12 @@
   // Fonts
   --font-family-main: 'Ubuntu', sans-serif;
   --font-family-extra: 'Ubuntu Mono' monospace;
-  --font-size-xs: 15px;
-  --line-height-xs: 15px;
+  --font-size-xxs: 15px;
+  --line-height-xxs: 15px;
+  --font-extra-xxs: var(--font-size-xxs) / var(--line-height-xxs)
+    var(--font-family-extra);
+  --font-size-xs: 18px;
+  --line-height-xs: 18px;
   --font-extra-xs: var(--font-size-xs) / var(--line-height-xs)
     var(--font-family-extra);
   --font-size-s: 20px;
@@ -37,6 +41,7 @@
   // Colors
   --primary-bg-color: #000;
   --primary-color: #fff;
+  --primary-color-op30: rgb(255 255 255 / 30%);
   --secondary-color: #000;
   --extra-color: #22e335;
 
@@ -47,4 +52,11 @@
   --gradient-4: linear-gradient(65.29deg, #ffec41 14.23%, #ff6b00 68.42%);
   --gradient-5: linear-gradient(180deg, #14ff00 0%, #db01ff 100%);
   --gradient-6: linear-gradient(93.03deg, #00ff19 19.64%, #940097 74.47%);
+  --gradient-7: linear-gradient(90deg, #17ff6b -12.5%, #00a6da 111.25%);
+  --gradient-8: linear-gradient(90deg, #250d23 -32.31%, #8d18e8 139.23%);
+
+  // Transitions
+  --transition-duration-fast: 0.05s;
+  --transition-duration-normal: 0.2s;
+  --transition-function: ease-in;
 }

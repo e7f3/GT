@@ -14,14 +14,14 @@ export enum ButtonColorScheme {
   'ALTERNATIVE' = 'alternativeColorScheme',
 }
 
-interface Props extends ButtonHTMLAttributes<HTMLButtonElement> {
+interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
   children?: ReactNode
   className?: string
   theme?: ButtonTheme
   colorScheme?: ButtonColorScheme
 }
 
-export const Button: FC<Props> = memo((props) => {
+export const Button: FC<ButtonProps> = memo((props) => {
   const {
     children,
     className,

@@ -1,0 +1,24 @@
+.Navbar {
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@media only screen and (min-width: 744px) {
+  .Navbar {
+    gap: 22px;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .Navbar {
+    gap: 28px;
+  }
+}
+
+@media only screen and (min-width: 1920px) {
+  .Navbar {
+    gap: 40px;
+  }
+}
