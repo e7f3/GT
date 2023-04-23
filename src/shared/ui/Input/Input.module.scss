@@ -11,7 +11,7 @@
 
   border-radius: 1px;
 
-  background-color: var(--primary-color-op30);
+  background-color: var(--primary-color-30);
 }
 
 .Input::placeholder {
@@ -25,7 +25,7 @@
 @media only screen and (min-width: 1920px) {
   .Input {
     padding: 12px 25px;
-    
+
     font-size: var(--font-size-s);
     line-height: 23px;
   }

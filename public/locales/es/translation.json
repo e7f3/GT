@@ -1,4 +1,9 @@
 {
   "test": "espa",
-  "currentLanguage": "Esp"
+  "currentLanguage": "Esp",
+  "aboutUs": "test",
+  "clients": "test",
+  "services": "test",
+  "workflow": "test",
+  "benefits": "test"
 }

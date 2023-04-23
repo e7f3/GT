@@ -1,4 +1,9 @@
 {
   "test": "русск",
-  "currentLanguage": "Рус"
+  "currentLanguage": "Рус",
+  "aboutUs": "test",
+  "clients": "test",
+  "services": "test",
+  "workflow": "test",
+  "benefits": "test"
 }

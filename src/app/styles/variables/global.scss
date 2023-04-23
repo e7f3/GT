@@ -1,7 +1,7 @@
 :root {
   // Fonts
   --font-family-main: 'Ubuntu', sans-serif;
-  --font-family-extra: 'Ubuntu Mono' monospace;
+  --font-family-extra: 'Ubuntu Mono', monospace;
   --font-size-xxs: 15px;
   --line-height-xxs: 15px;
   --font-extra-xxs: var(--font-size-xxs) / var(--line-height-xxs)
@@ -41,7 +41,7 @@
   // Colors
   --primary-bg-color: #000;
   --primary-color: #fff;
-  --primary-color-op30: rgb(255 255 255 / 30%);
+  --primary-color-30: rgb(255 255 255 / 30%);
   --secondary-color: #000;
   --extra-color: #22e335;
 
@@ -54,6 +54,12 @@
   --gradient-6: linear-gradient(93.03deg, #00ff19 19.64%, #940097 74.47%);
   --gradient-7: linear-gradient(90deg, #17ff6b -12.5%, #00a6da 111.25%);
   --gradient-8: linear-gradient(90deg, #250d23 -32.31%, #8d18e8 139.23%);
+  --gradient-9: linear-gradient(
+    90deg,
+    #77cc4f 6.4%,
+    #2f469b 39.02%,
+    #8c18e8 69.85%
+  );
 
   // Transitions
   --transition-duration-fast: 0.05s;

@@ -1,0 +1,116 @@
+.Header {
+  --border-width: 4px;
+  position: relative;
+
+  display: grid;
+  grid-auto-flow: column;
+  grid-template-columns: max-content max-content;
+  gap: 40px;
+  justify-content: space-between;
+  align-items: flex-end;
+
+  margin-bottom: 50px;
+  padding: 50px 15px 15px;
+
+  border-style: solid;
+  border-width: 0 0 var(--border-width) 0;
+  border-image-source: var(--gradient-9);
+  border-image-slice: 1;
+}
+
+.HeaderLogo {
+  width: 88px;
+  height: 42px;
+}
+
+.HeaderNavbar {
+  position: absolute;
+  top: calc(100% + 10px);
+  left: 0;
+  right: 0;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  width: 100%;
+  height: fit-content;
+  padding: 0 15px;
+}
+
+.HeaderSwitcher {
+  margin-left: auto;
+}
+
+@media only screen and (min-width: 744px) {
+  .Header {
+    grid-template-columns: max-content 1fr max-content;
+
+    margin-bottom: unset;
+    padding: 50px 20px 15px;
+  }
+
+  .HeaderNavbar {
+    position: relative;
+    top: unset;
+    left: unset;
+    right: unset;
+
+    flex-wrap: nowrap;
+
+    width: fit-content;
+    margin-left: auto;
+    padding: unset;
+  }
+
+  .HeaderLogo {
+    width: 103px;
+    height: 49px;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .Header {
+    gap: 50px;
+
+    padding: 50px 40px 25px;
+  }
+
+  .HeaderLogo {
+    width: 140px;
+    height: 65px;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .Header {
+    gap: 60px;
+
+    padding: 50px 95px 25px;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .Header {
+    padding: 50px 125px 35px;
+  }
+}
+
+@media only screen and (min-width: 1920px) {
+  .Header {
+    padding: 50px 240px 35px;
+  }
+
+  .HeaderLogo {
+    width: 156px;
+    height: 72px;
+  }
+}
+
+@media only screen and (min-width: 2560px) {
+  .Header {
+    gap: 75px;
+
+    padding: 50px 340px 35px;
+  }
+}

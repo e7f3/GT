@@ -21,6 +21,7 @@
   border-image-slice: 1;
 
   background-color: transparent;
+  background-color: var(--primary-bg-color);
 
   visibility: visible;
   cursor: pointer;
@@ -44,6 +45,8 @@
   border-width: var(--border-width);
   border-image-source: linear-gradient(90deg, #250d23 -32.31%, #8d18e8 139.23%);
   border-image-slice: 1;
+
+  background-color: var(--primary-bg-color);
 
   visibility: initial;
 
