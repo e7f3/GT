@@ -1,13 +1,13 @@
 .Footer {
-  --footer-indent: 15px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
+  align-self: flex-end;
 
   width: 100%;
-  margin: 0 0 60px;
-  padding: 0 var(--footer-indent);
+  margin: 0;
+  padding: 0 var(--footer-indent) 60px;
 }
 
 .FooterContacts {
@@ -85,10 +85,6 @@
 }
 
 @media only screen and (min-width: 744px) {
-  .Footer {
-    --footer-indent: 45px;
-  }
-
   .FooterTitle {
     font-size: 50px;
     line-height: 50px;
@@ -135,8 +131,7 @@
 
 @media only screen and (min-width: 1024px) {
   .Footer {
-    --footer-indent: 70px;
-    margin-bottom: 135px;
+    padding-bottom: 135px;
   }
 
   .FooterText {
@@ -154,11 +149,10 @@
 
 @media only screen and (min-width: 1280px) {
   .Footer {
-    --footer-indent: 115px;
     flex-flow: row wrap;
     justify-content: space-between;
 
-    margin-bottom: 60px;
+    padding-bottom: 60px;
   }
 
   .FooterContacts {
@@ -191,10 +185,6 @@
 }
 
 @media only screen and (min-width: 1440px) {
-  .Footer {
-    --footer-indent: 120px;
-  }
-
   .FooterTitle {
     font-size: 55px;
     line-height: 55px;
@@ -232,10 +222,6 @@
 }
 
 @media only screen and (min-width: 1920px) {
-  .Footer {
-    --footer-indent: 185px;
-  }
-
   .FooterTitle {
     font-size: 60px;
     line-height: 60px;
@@ -274,8 +260,7 @@
 
 @media only screen and (min-width: 2560px) {
   .Footer {
-    --footer-indent: 345px;
-    margin-bottom: 125px;
+    padding-bottom: 125px;
   }
 
   .FooterContacts {

@@ -38,6 +38,11 @@
   --gap-xl: 120px;
   --gap-xxl: 185px;
 
+  // Indents
+  --template-indent: 15px;
+  --footer-indent: 15px;
+  --header-indent: 15px;
+
   // Colors
   --primary-bg-color: #000;
   --primary-color: #fff;
@@ -65,4 +70,52 @@
   --transition-duration-fast: 0.05s;
   --transition-duration-normal: 0.2s;
   --transition-function: ease-in;
+}
+
+@media only screen and (min-width: 744px) {
+  :root {
+    --template-indent: 45px;
+    --footer-indent: 45px;
+    --header-indent: 45px;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  :root {
+    --template-indent: 70px;
+    --footer-indent: 70px;
+    --header-indent: 70px;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  :root {
+    --template-indent: 115px;
+    --footer-indent: 115px;
+    --header-indent: 115px;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  :root {
+    --template-indent: 150px;
+    --footer-indent: 150px;
+    --header-indent: 150px;
+  }
+}
+
+@media only screen and (min-width: 1920px) {
+  :root {
+    --template-indent: 350px;
+    --footer-indent: 185px;
+    --header-indent: 185px;
+  }
+}
+
+@media only screen and (min-width: 2560px) {
+  :root {
+    --template-indent: 380px;
+    --footer-indent: 345px;
+    --header-indent: 345px;
+  }
 }
