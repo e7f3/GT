@@ -9,10 +9,11 @@ import classes from './ContactForm.module.scss'
 
 interface ContactFormProps {
   className?: string
+  id?: string
 }
 
 export const ContactForm: FC<ContactFormProps> = memo((props) => {
-  const { className } = props
+  const { className, id } = props
   const { t } = useTranslation()
 
   const [value, setValue] = useState<string>('')
@@ -23,7 +24,7 @@ export const ContactForm: FC<ContactFormProps> = memo((props) => {
   }, [value])
 
   return (
-    <div className={classNames(classes.ContactForm, {}, [className])}>
+    <div className={classNames(classes.ContactForm, {}, [className])} id={id}>
       <Input
         className={classes.ContactFormInput}
         placeholder={t('emailInputPlaceholder')}

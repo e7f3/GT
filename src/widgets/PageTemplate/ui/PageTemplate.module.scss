@@ -11,6 +11,7 @@
 .PageContent {
   width: 100%;
   height: fit-content;
+  padding: 0 var(--template-indent);
 
   background-color: inherit;
 }

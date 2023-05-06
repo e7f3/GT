@@ -26,6 +26,7 @@ declare module '*.png'
 declare module '*.jpeg'
 declare module '*.jpg'
 declare module '*.gif'
+declare module '*.webp'
 
 declare const __IS_DEV__: boolean
 declare const __PROJECT__: 'frontend' | 'jest'

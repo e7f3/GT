@@ -1,11 +1,9 @@
-import { Footer } from 'widgets/Footer'
-import { Header } from 'widgets/Header/ui/Header'
+import { MainPage } from 'pages/MainPage'
 
 export const App = () => {
   return (
     <div className='app'>
-      <Header />
-      <Footer />
+      <MainPage />
     </div>
   )
 }

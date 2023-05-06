@@ -1,14 +1,19 @@
 {
   "test": "русск",
   "currentLanguage": "Рус",
-  "aboutUs": "test",
-  "clients": "test",
-  "services": "test",
-  "workflow": "test",
-  "benefits": "test",
+  "aboutUsNavbarLink": "test",
+  "clientsNavbarLink": "test",
+  "servicesNavbarLink": "test",
+  "workflowNavbarLink": "test",
+  "benefitsNavbarLink": "test",
+  "contactNavbarLink": "test",
   "footerTitle": "test",
   "footerText": "test",
   "footerYear": "2023",
   "submitButton": "test",
-  "emailInputPlaceholder": "test"
+  "emailInputPlaceholder": "test",
+  "mainBannerTitle": "test",
+  "mainBannerText": "test",
+  "mainBannerPlansLink": "test",
+  "mainBannerContactLink": "test"
 }

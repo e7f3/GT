@@ -1,24 +1,43 @@
-import { FC, memo, useMemo } from 'react'
+import { FC, memo } from 'react'
 
-import LogoX1 from 'shared/assets/icons/Logo-x1.png'
-import LogoX2 from 'shared/assets/icons/Logo-x2.png'
-import LogoX3 from 'shared/assets/icons/Logo-x3.png'
-import { classNames } from 'shared/lib/classNames/classNames'
+import LogoPngX1 from 'shared/assets/images/Logo/Logo-x1.png'
+import LogoWebpX1 from 'shared/assets/images/Logo/Logo-x1.webp'
+import LogoPngX2 from 'shared/assets/images/Logo/Logo-x2.png'
+import LogoWebpX2 from 'shared/assets/images/Logo/Logo-x2.webp'
+import LogoPngX3 from 'shared/assets/images/Logo/Logo-x3.png'
+import LogoWebpX3 from 'shared/assets/images/Logo/Logo-x3.webp'
 
 import classes from './Logo.module.scss'
+import { ImageSources, Picture } from '../Picture/Picture'
 
 interface LogoProps {
   className?: string
 }
 
+const pngSources: ImageSources = {
+  '1x': LogoPngX1,
+  '2x': LogoPngX2,
+  '3x': LogoPngX3,
+}
+
+const webpSources: ImageSources = {
+  '1x': LogoWebpX1,
+  '2x': LogoWebpX2,
+  '3x': LogoWebpX3,
+}
+
 export const Logo: FC<LogoProps> = memo((props) => {
   const { className } = props
-  const sourceSrc = useMemo(() => `${LogoX2} 2x ${LogoX3} 3x`, [])
 
   return (
-    <picture className={classNames(classes.Logo, {}, [className])}>
-      <source type='image/png' srcSet={sourceSrc} />
-      <img className={classes.Logo} src={LogoX1} alt='GTIT' />
-    </picture>
+    <div className={className}>
+      <Picture
+        className={classes.Logo}
+        src={LogoPngX1}
+        pngSources={pngSources}
+        webpSources={webpSources}
+        alt='GTIT'
+      />
+    </div>
   )
 })

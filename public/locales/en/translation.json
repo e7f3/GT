@@ -1,14 +1,19 @@
 {
   "test": "engl",
   "currentLanguage": "Eng",
-  "aboutUs": "About us",
-  "clients": "Clients",
-  "services": "Services",
-  "workflow": "How do we work",
-  "benefits": "Our benefits",
+  "aboutUsNavbarLink": "About us",
+  "clientsNavbarLink": "Clients",
+  "servicesNavbarLink": "Services",
+  "workflowNavbarLink": "How do we work",
+  "benefitsNavbarLink": "Our benefits",
+  "contactNavbarLink": "Contact us",
   "footerTitle": "Contact us",
   "footerText": "Leave your email and we will contact you as soon as possible. Or write us directly.",
   "footerYear": "2023",
   "submitButton": "Send",
-  "emailInputPlaceholder": "Enter your email"
+  "emailInputPlaceholder": "Enter your email",
+  "mainBannerTitle": "DevOps Support and Outsourcing",
+  "mainBannerText": "We make your service fast and secure",
+  "mainBannerPlansLink": "See plans",
+  "mainBannerContactLink": "Contact us"
 }

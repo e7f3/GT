@@ -15,11 +15,12 @@ export const Navbar: FC<NavbarProps> = memo((props) => {
   const { t } = useTranslation()
   return (
     <div className={classNames(classes.Navbar, {}, [className])}>
-      <Link href='#aboutUs'>{t('aboutUs')}</Link>
-      <Link href='#clients'>{t('clients')}</Link>
-      <Link href='#services'>{t('services')}</Link>
-      <Link href='#workflow'>{t('workflow')}</Link>
-      <Link href='#benefits'>{t('benefits')}</Link>
+      <Link href='#aboutUs'>{t('aboutUsNavbarLink')}</Link>
+      <Link href='#clients'>{t('clientsNavbarLink')}</Link>
+      <Link href='#services'>{t('servicesNavbarLink')}</Link>
+      <Link href='#workflow'>{t('workflowNavbarLink')}</Link>
+      <Link href='#benefits'>{t('benefitsNavbarLink')}</Link>
+      <Link href='#contact'>{t('contactNavbarLink')}</Link>
     </div>
   )
 })
