@@ -1,0 +1,14 @@
+.ContactForm {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+  justify-content: center;
+  align-items: center;
+}
+
+.ContactFormButton {
+  width: 150px;
+
+  font-size: 23px;
+  line-height: 23px;
+}

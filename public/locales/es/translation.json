@@ -5,5 +5,10 @@
   "clients": "test",
   "services": "test",
   "workflow": "test",
-  "benefits": "test"
+  "benefits": "test",
+  "footerTitle": "test",
+  "footerText": "test",
+  "footerYear": "2023",
+  "submitButton": "test",
+  "emailInputPlaceholder": "test"
 }

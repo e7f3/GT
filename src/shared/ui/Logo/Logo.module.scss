@@ -1,0 +1,25 @@
+.Logo {
+  width: 88px;
+  height: 42px;
+}
+
+@media only screen and (min-width: 744px) {
+  .Logo {
+    width: 103px;
+    height: 49px;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .Logo {
+    width: 140px;
+    height: 65px;
+  }
+}
+
+@media only screen and (min-width: 1920px) {
+  .Logo {
+    width: 156px;
+    height: 72px;
+  }
+}

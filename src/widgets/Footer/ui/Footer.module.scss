@@ -1,0 +1,284 @@
+.Footer {
+  --footer-indent: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+
+  width: 100%;
+  margin: 0 0 60px;
+  padding: 0 var(--footer-indent);
+}
+
+.FooterContacts {
+  display: flex;
+  flex-direction: column;
+
+  width: 100%;
+  margin: 0 auto;
+}
+
+.FooterTitle {
+  color: var(--primary-color);
+  font: var(--font-main-l);
+  font-weight: 500;
+}
+
+.FooterText {
+  margin-top: 14px;
+
+  color: var(--primary-color);
+  font: var(--font-extra-xs);
+  font-weight: 400;
+}
+
+.FooterForm {
+  margin-top: 40px;
+}
+
+.FooterLinks {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+
+  width: 100vw;
+  margin: 110px calc(-1 * var(--footer-indent)) 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.FooterLinkWrapper {
+  width: 100%;
+  padding: 5px var(--footer-indent);
+
+  color: var(--primary-color);
+  font: var(--font-extra-xs);
+  font-weight: 400;
+
+  border-bottom-width: 3px;
+  border-bottom-style: solid;
+  border-image-source: var(--gradient-3);
+  border-image-slice: 1;
+}
+
+.FooterImage {
+  display: none;
+
+  visibility: hidden;
+}
+
+.FooterLogo {
+  display: flex;
+  align-items: flex-end;
+
+  margin: 230px auto 0;
+}
+
+.FooterYear {
+  margin-left: 16px;
+
+  font-size: 12px;
+  font-family: var(--font-family-main);
+  line-height: 12px;
+  letter-spacing: 0.6em;
+}
+
+@media only screen and (min-width: 744px) {
+  .Footer {
+    --footer-indent: 45px;
+  }
+
+  .FooterTitle {
+    font-size: 50px;
+    line-height: 50px;
+  }
+
+  .FooterText {
+    max-width: 400px;
+    margin-top: 30px;
+  }
+
+  .FooterForm {
+    flex-direction: row;
+    justify-content: flex-start;
+
+    margin-top: 30px;
+
+    column-gap: 15px;
+  }
+
+  .FooterLinks {
+    margin-left: 0;
+
+    overflow: hidden;
+  }
+
+  .FooterLinkWrapper {
+    padding-left: 0;
+  }
+
+  .FooterImageWrapper {
+    margin: 200px auto 0;
+  }
+
+  .FooterImage {
+    display: block;
+
+    visibility: visible;
+  }
+
+  .FooterLogo {
+    margin-top: 75px;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .Footer {
+    --footer-indent: 70px;
+    margin-bottom: 135px;
+  }
+
+  .FooterText {
+    max-width: 470px;
+  }
+
+  .FooterLinks {
+    margin-top: 125px;
+  }
+
+  .FooterImageWrapper {
+    margin-top: 390px;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .Footer {
+    --footer-indent: 115px;
+    flex-flow: row wrap;
+    justify-content: space-between;
+
+    margin-bottom: 60px;
+  }
+
+  .FooterContacts {
+    width: fit-content;
+    margin: 0;
+  }
+
+  .FooterLinks {
+    flex-basis: 50%;
+
+    margin-top: 30px;
+  }
+
+  .FooterImageWrapper {
+    margin: 0;
+  }
+
+  .FooterImage {
+    display: none;
+
+    visibility: hidden;
+  }
+
+  .FooterLogo {
+    justify-content: center;
+
+    width: 100%;
+    margin-top: 210px;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .Footer {
+    --footer-indent: 120px;
+  }
+
+  .FooterTitle {
+    font-size: 55px;
+    line-height: 55px;
+  }
+
+  .FooterContacts {
+    flex-basis: 50%;
+  }
+
+  .FooterForm {
+    margin-top: 40px;
+  }
+
+  .FooterForm > input {
+    flex: 1;
+  }
+
+  .FooterLinks {
+    justify-content: space-between;
+
+    height: 200px;
+    margin-top: 0;
+  }
+
+  .FooterLogo {
+    margin-top: 300px;
+  }
+
+  .FooterYear {
+    margin-left: 25px;
+
+    font-size: var(--font-size-xxs);
+    line-height: var(--line-height-xxs);
+  }
+}
+
+@media only screen and (min-width: 1920px) {
+  .Footer {
+    --footer-indent: 185px;
+  }
+
+  .FooterTitle {
+    font-size: 60px;
+    line-height: 60px;
+  }
+
+  .FooterText {
+    margin-top: 15px;
+
+    font: var(--font-extra-s);
+  }
+
+  .FooterContacts {
+    flex-basis: 45%;
+  }
+
+  .FooterForm {
+    margin-top: 60px;
+  }
+
+  .FooterLinks {
+    flex-basis: 55%;
+
+    height: 225px;
+  }
+
+  .FooterLinkWrapper {
+    padding: 8px var(--footer-indent) 8px 0;
+
+    font: var(--font-extra-s);
+  }
+
+  .FooterLogo {
+    margin-top: 375px;
+  }
+}
+
+@media only screen and (min-width: 2560px) {
+  .Footer {
+    --footer-indent: 345px;
+    margin-bottom: 125px;
+  }
+
+  .FooterContacts {
+    flex-basis: unset;
+  }
+}

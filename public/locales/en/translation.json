@@ -1,8 +1,14 @@
 {
+  "test": "engl",
   "currentLanguage": "Eng",
   "aboutUs": "About us",
   "clients": "Clients",
   "services": "Services",
   "workflow": "How do we work",
-  "benefits": "Our Benefits"
+  "benefits": "Our benefits",
+  "footerTitle": "Contact us",
+  "footerText": "Leave your email and we will contact you as soon as possible. Or write us directly.",
+  "footerYear": "2023",
+  "submitButton": "Send",
+  "emailInputPlaceholder": "Enter your email"
 }

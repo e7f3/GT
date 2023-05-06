@@ -3,29 +3,29 @@
   --font-family-main: 'Ubuntu', sans-serif;
   --font-family-extra: 'Ubuntu Mono', monospace;
   --font-size-xxs: 15px;
+  --font-size-xs: 18px;
+  --font-size-s: 20px;
+  --font-size-m: 30px;
+  --font-size-l: 40px;
+  --font-size-xl: 60px;
   --line-height-xxs: 15px;
+  --line-height-xs: 18px;
+  --line-height-s: 20px;
+  --line-height-m: 30px;
+  --line-height-l: 40px;
+  --line-height-xl: 60px;
   --font-extra-xxs: var(--font-size-xxs) / var(--line-height-xxs)
     var(--font-family-extra);
-  --font-size-xs: 18px;
-  --line-height-xs: 18px;
   --font-extra-xs: var(--font-size-xs) / var(--line-height-xs)
     var(--font-family-extra);
-  --font-size-s: 20px;
-  --line-height-s: 20px;
   --font-extra-s: var(--font-size-s) / var(--line-height-s)
     var(--font-family-extra);
-  --font-size-m: 30px;
-  --line-height-m: 30px;
   --font-extra-m: var(--font-size-m) / var(--line-height-m)
     var(--font-family-extra);
   --font-main-m: var(--font-size-m) / var(--line-height-m)
     var(--font-family-main);
-  --font-size-l: 40px;
-  --line-height-l: 40px;
   --font-main-l: var(--font-size-l) / var(--line-height-l)
     var(--font-family-main);
-  --font-size-xl: 60px;
-  --line-height-xl: 60px;
   --font-main-xl: var(--font-size-xl) / var(--line-height-xl)
     var(--font-family-main);
 
