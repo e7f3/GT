@@ -15,5 +15,22 @@
   "mainBannerTitle": "test",
   "mainBannerText": "test",
   "mainBannerPlansLink": "test",
-  "mainBannerContactLink": "test"
+  "mainBannerContactLink": "test",
+  "aboutUsTitle": "test",
+  "aboutUsText": "test",
+  "aboutUsFeatureTitle1": "test",
+  "aboutUsFeatureTitle2": "test",
+  "aboutUsFeatureTitle3": "test",
+  "aboutUsFeatureTitle4": "test",
+  "aboutUsFeatureTitle5": "test",
+  "aboutUsFeatureTitle6": "test",
+
+  "aboutUsFeatureText1": "Linux, Nginx, Apache, Netfilter/iptables, DNS, Email, Backups, FreeBSD",
+  "aboutUsFeatureText2": "Docker, Kubernetes, OpenStack, KVM, Proxmox, VMware, Terraform, Ansible",
+  "aboutUsFeatureText3": "Zabbix, Nagios, Prometheus, Grafana, ELK Stack, Graylog",
+  "aboutUsFeatureText4": "MySQL, PostgreSQL, MongoDB, Redis, Oracle Database, Elasticsearch",
+  "aboutUsFeatureText5": "AWS, Google Cloud, Azure, Digital Ocean, Heroku, Hetzner",
+  "aboutUsFeatureText6": "GitLab, GitHub, Bitbucket, Jenkins, TeamCity, Sonar",
+  "aboutUsFooterText": "test",
+  "aboutUsFooterButton": "test"
 }

@@ -10,6 +10,7 @@ import FooterImageWebpX3 from 'shared/assets/images/FooterImage/FooterImage-x3.w
 import { Link } from 'shared/ui/Link/Link'
 import { Logo } from 'shared/ui/Logo/Logo'
 import { Picture, ImageSources } from 'shared/ui/Picture/Picture'
+import { Title, TitleVariant } from 'shared/ui/Title/Title'
 import { ContactForm } from 'widgets/ContactForm'
 
 import classes from './Footer.module.scss'
@@ -32,7 +33,10 @@ export const Footer: FC = memo(() => {
   return (
     <div className={classes.Footer} id='contact'>
       <div className={classes.FooterContacts}>
-        <h2 className={classes.FooterTitle}>{t('footerTitle')}</h2>
+        <Title className={classes.FooterTitle} variant={TitleVariant.H2}>
+          {t('footerTitle')}
+        </Title>
+        {/* <h2 className={classes.FooterTitle}>{t('footerTitle')}</h2> */}
         <div className={classes.FooterText}>{t('footerText')}</div>
         <ContactForm className={classes.FooterForm} />
       </div>

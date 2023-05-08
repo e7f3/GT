@@ -1,0 +1,58 @@
+.Title {
+  color: var(--primary-color);
+  font-family: var(--font-family-main);
+}
+
+.Title.h1,
+.Title.h2 {
+  font: var(--font-main-l);
+  font-weight: 500;
+}
+
+@media only screen and (min-width: 744px) {
+  .Title.h1,
+  .Title.h2 {
+    font-size: 50px;
+    line-height: 57px;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .Title.h1,
+  .Title.h2 {
+    font-size: 55px;
+    line-height: 63px;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .Title.h1,
+  .Title.h2 {
+    font-size: 50px;
+    line-height: 57px;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .Title.h1,
+  .Title.h2 {
+    font-size: 55px;
+    line-height: 63px;
+  }
+}
+
+@media only screen and (min-width: 1920px) {
+  .Title.h1,
+  .Title.h2 {
+    font-size: 60px;
+    line-height: 69px;
+  }
+}
+
+@media only screen and (min-width: 2560px) {
+  .Title.h1,
+  .Title.h2 {
+    font-size: 80px;
+    line-height: 91px;
+  }
+}

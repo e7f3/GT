@@ -15,5 +15,21 @@
   "mainBannerTitle": "DevOps Support and Outsourcing",
   "mainBannerText": "We make your service fast and secure",
   "mainBannerPlansLink": "See plans",
-  "mainBannerContactLink": "Contact us"
+  "mainBannerContactLink": "Contact us",
+  "aboutUsTitle": "We are here to maintain your infrastructure",
+  "aboutUsText": "Outsource routine tasks and automate processes",
+  "aboutUsFeatureTitle1": "Classic server stack",
+  "aboutUsFeatureTitle2": "Virtualization & Orchestration",
+  "aboutUsFeatureTitle3": "Monitoring & Logging",
+  "aboutUsFeatureTitle4": "Databases",
+  "aboutUsFeatureTitle5": "Cloud Computing",
+  "aboutUsFeatureTitle6": "VCS & CI/CD",
+  "aboutUsFeatureText1": "Linux, Nginx, Apache, Netfilter/iptables, DNS, Email, Backups, FreeBSD",
+  "aboutUsFeatureText2": "Docker, Kubernetes, OpenStack, KVM, Proxmox, VMware, Terraform, Ansible",
+  "aboutUsFeatureText3": "Zabbix, Nagios, Prometheus, Grafana, ELK Stack, Graylog",
+  "aboutUsFeatureText4": "MySQL, PostgreSQL, MongoDB, Redis, Oracle Database, Elasticsearch",
+  "aboutUsFeatureText5": "AWS, Google Cloud, Azure, Digital Ocean, Heroku, Hetzner",
+  "aboutUsFeatureText6": "GitLab, GitHub, Bitbucket, Jenkins, TeamCity, Sonar",
+  "aboutUsFooterText": "We are not limited to these - contact us for your case",
+  "aboutUsFooterButton": "Find out more"
 }

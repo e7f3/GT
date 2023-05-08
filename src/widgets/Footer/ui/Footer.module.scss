@@ -20,8 +20,6 @@
 
 .FooterTitle {
   color: var(--primary-color);
-  font: var(--font-main-l);
-  font-weight: 500;
 }
 
 .FooterText {
@@ -85,11 +83,6 @@
 }
 
 @media only screen and (min-width: 744px) {
-  .FooterTitle {
-    font-size: 50px;
-    line-height: 50px;
-  }
-
   .FooterText {
     max-width: 400px;
     margin-top: 30px;
@@ -185,11 +178,6 @@
 }
 
 @media only screen and (min-width: 1440px) {
-  .FooterTitle {
-    font-size: 55px;
-    line-height: 55px;
-  }
-
   .FooterContacts {
     flex-basis: 50%;
   }
@@ -222,11 +210,6 @@
 }
 
 @media only screen and (min-width: 1920px) {
-  .FooterTitle {
-    font-size: 60px;
-    line-height: 60px;
-  }
-
   .FooterText {
     margin-top: 15px;
 
