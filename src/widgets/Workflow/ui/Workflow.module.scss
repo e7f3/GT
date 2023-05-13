@@ -1,0 +1,311 @@
+.Workflow {
+  --principles-gap: 75px;
+  --principle-header-height: 55px;
+  display: flex;
+  flex-direction: column;
+
+  padding-top: 85px;
+}
+
+.Header {
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+  row-gap: 15px;
+}
+
+.Header > *:not(picture) {
+  max-width: 475px;
+}
+
+.HeaderImage {
+  position: absolute;
+
+  display: none;
+
+  visibility: hidden;
+
+  appearance: none;
+}
+
+.PrinciplesWrapper {
+  margin-top: 40px;
+}
+
+.PrinciplesList {
+  display: flex;
+  flex-direction: column;
+  row-gap: var(--principles-gap);
+
+  list-style: none;
+}
+
+.Principle {
+  position: relative;
+
+  text-align: right;
+}
+
+.Principle:not(:last-child)::after {
+  position: absolute;
+  top: var(--principle-header-height);
+  right: 0;
+  content: '';
+
+  width: 2px;
+  height: calc(100% + var(--principles-gap));
+
+  background-color: var(--gradient-1-color-2);
+}
+
+.PrincipleHeader {
+  height: var(--principle-header-height);
+  margin-left: calc(-1 * var(--template-indent));
+  padding: 10px 16px;
+
+  border-bottom-width: 2px;
+  border-bottom-style: solid;
+  border-image-source: var(--gradient-1);
+  border-image-slice: 1;
+}
+
+.PrincipleTitle {
+  color: transparent;
+  font-weight: 700;
+  font-size: 27px;
+  font-family: var(--font-family-main);
+  line-height: 31px;
+
+  background: var(--gradient-1);
+  background-clip: text;
+}
+
+.PrincipleBody {
+  padding: 10px 16px;
+}
+
+.WorkflowImageWrapper {
+  display: flex;
+  justify-content: center;
+
+  margin: 85px calc(-1 * var(--template-indent)) 0;
+}
+
+.WorkflowImage {
+  height: 150px;
+}
+
+@media only screen and (min-width: 744px) {
+  .Workflow {
+    --principles-gap: 25px;
+
+    padding-top: 105px;
+  }
+
+  .Principle {
+    width: calc(50% + 1px);
+  }
+
+  .Principle:nth-of-type(2n) {
+    align-self: flex-end;
+
+    text-align: left;
+  }
+
+  .Principle:nth-of-type(2n) .PrincipleHeader {
+    margin-right: calc(-1 * var(--template-indent));
+    margin-left: 0;
+
+    border-image-source: var(--gradient-2-1);
+  }
+
+  .Principle:nth-of-type(2n):not(:last-child)::after {
+    left: 0;
+    right: unset;
+  }
+
+  .Principle:nth-of-type(2n) .PrincipleTitle {
+    background: var(--gradient-2);
+    background-clip: text;
+  }
+
+  .WorkflowImage {
+    height: 200px;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .Workflow {
+    --principles-gap: 30px;
+
+    padding-top: 170px;
+  }
+
+  .PrinciplesWrapper {
+    margin-top: 70px;
+  }
+
+  .Principle:nth-of-type(2n - 1) .PrincipleHeader {
+    margin-left: calc(-0.5 * var(--template-indent));
+  }
+
+  .Principle:nth-of-type(2n) .PrincipleHeader {
+    margin-right: calc(-0.5 * var(--template-indent));
+  }
+
+  .WorkflowImageWrapper {
+    margin-top: 175px;
+  }
+
+  .WorkflowImage {
+    height: 235px;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .Workflow {
+    --principles-gap: 0px;
+
+    padding-top: 105px;
+  }
+
+  .HeaderImage {
+    right: 65px;
+
+    display: block;
+
+    width: 375px;
+
+    visibility: visible;
+
+    appearance: initial;
+  }
+
+  .Principle:nth-of-type(2n - 1) {
+    text-align: left;
+  }
+
+  .Principle:nth-of-type(2n) {
+    text-align: right;
+  }
+
+  .Principle:nth-of-type(2n - 1) .PrincipleHeader {
+    margin-left: 0;
+    padding-left: 0;
+  }
+
+  .Principle:nth-of-type(2n) .PrincipleHeader {
+    margin-right: 0;
+    padding-right: 0;
+  }
+
+  .Principle:nth-of-type(2n - 1) .PrincipleBody {
+    padding-right: 20%;
+    padding-left: 0;
+  }
+
+  .Principle:nth-of-type(2n) .PrincipleBody {
+    padding-right: 0;
+    padding-left: 20%;
+  }
+
+  .WorkflowImageWrapper {
+    margin-top: 115px;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .Workflow {
+    padding-top: 95px;
+  }
+
+  .HeaderImage {
+    top: 20px;
+    right: 40px;
+
+    width: 400px;
+  }
+
+  .WorkflowImageWrapper {
+    margin-top: 120px;
+  }
+
+  .WorkflowImage {
+    height: 240px;
+  }
+}
+
+@media only screen and (min-width: 1920px) {
+  .Workflow {
+    --principles-gap: 30px;
+    --principle-header-height: 60px;
+
+    padding-top: 230px;
+  }
+
+  .Header > *:not(picture) {
+    max-width: 575px;
+  }
+
+  .HeaderImage {
+    width: 445px;
+  }
+
+  .Principles {
+    margin-top: 80px;
+  }
+
+  .PrincipleHeader {
+    padding: 12px 0;
+  }
+
+  .PrincipleTitle {
+    font-size: 30px;
+    line-height: 34px;
+  }
+
+  .PrincipleBody {
+    padding-top: 16px;
+    padding-bottom: 16px;
+  }
+
+  .WorkflowImageWrapper {
+    margin-top: 190px;
+  }
+
+  .WorkflowImage {
+    height: 270px;
+  }
+}
+
+@media only screen and (min-width: 2560px) {
+  .Workflow {
+    --principle-header-height: 65px;
+
+    padding-top: 325px;
+  }
+
+  .Header > *:not(picture) {
+    max-width: 650px;
+  }
+
+  .HeaderImage {
+    top: -20px;
+
+    width: 570px;
+  }
+
+  .PrincipleTitle {
+    font-size: 33px;
+    line-height: 37px;
+  }
+
+  .WorkflowImageWrapper {
+    margin-top: 235px;
+  }
+
+  .WorkflowImage {
+    height: 300px;
+  }
+}

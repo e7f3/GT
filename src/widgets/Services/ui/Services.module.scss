@@ -48,6 +48,9 @@
   line-height: 46px;
 
   background-clip: text;
+
+  // stylelint-disable-next-line
+  -webkit-background-clip: text;
 }
 
 .CardPrice {

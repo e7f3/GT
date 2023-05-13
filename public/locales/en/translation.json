@@ -71,5 +71,15 @@
   "serviceCardButtonText3": "Discuss",
 
   "servicesFooterText": "Pay only for what you need - mix your own tariff plan",
-  "servicesFooterButton": "Detail the price"
+  "servicesFooterButton": "Detail the price",
+  "workflowTitle": "How do we work?",
+  "workflowText": "We work only in a remote format, although key decisions can be made in person",
+  "workflowPrincipleTitle1": "Communication",
+  "workflowPrincipleText1": "For providing our services we communicate in text chats and voice conferences with Slack, Zoom, Google Meet and Telegram.",
+  "workflowPrincipleTitle2": "Task tracking",
+  "workflowPrincipleText2": "All the details of technical process, tasks and documentation are recording in a task tracker - Jira or Redmine",
+  "workflowPrincipleTitle3": "Outsourcing",
+  "workflowPrincipleText3": "As part of the Outsourcing service regular voice conferences are held, we always have a communication in text chats and by email’s, set tasks in a tracker",
+  "workflowPrincipleTitle4": "Support",
+  "workflowPrincipleText4": "As part of the Support service our engineers stay in touch 24 hours in a chat, reacting on monitoring signals and client’s messages following SLA "
 }

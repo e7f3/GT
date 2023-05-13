@@ -6,6 +6,7 @@ import { MainBanner } from 'widgets/MainBanner'
 import { OurClients } from 'widgets/OurClients'
 import { PageTemplate } from 'widgets/PageTemplate'
 import { Services } from 'widgets/Services'
+import { Workflow } from 'widgets/Workflow'
 
 const MainPage = memo(() => {
   const { t } = useTranslation()
@@ -16,6 +17,7 @@ const MainPage = memo(() => {
       <AboutUs />
       <OurClients />
       <Services />
+      <Workflow />
     </PageTemplate>
   )
 })
