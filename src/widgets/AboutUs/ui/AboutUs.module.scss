@@ -3,15 +3,14 @@
   flex-direction: column;
 }
 
-.Info {
-  margin-top: 45px;
+.Header {
+  display: flex;
+  flex-direction: column;
+  row-gap: 15px;
 }
 
-.Text {
-  margin-top: 15px;
-
-  color: var(--primary-color);
-  font: var(--font-extra-xs);
+.Info {
+  margin-top: 45px;
 }
 
 .Image {
@@ -65,8 +64,6 @@
 }
 
 .FeatureText {
-  color: var(--primary-color);
-  font: var(--font-extra-xs);
   text-align: right;
 }
 
@@ -246,10 +243,6 @@
     max-width: 770px;
   }
 
-  .Text {
-    font: var(--font-extra-s);
-  }
-
   .Info {
     row-gap: 300px;
 
@@ -259,10 +252,6 @@
   .FeatureTitle {
     font-size: 30px;
     line-height: 35px;
-  }
-
-  .FeatureText {
-    font: var(--font-extra-s);
   }
 
   .Image {
@@ -283,11 +272,6 @@
 @media only screen and (min-width: 2560px) {
   .Header {
     max-width: 980px;
-  }
-
-  .Text {
-    font-size: 23px;
-    line-height: 23px;
   }
 
   .Info {

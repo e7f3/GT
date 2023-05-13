@@ -9,6 +9,7 @@ import MainBannerPngX3 from 'shared/assets/images/MainBanner/MainBannerImage-x3.
 import MainBannerWebpX3 from 'shared/assets/images/MainBanner/MainBannerImage-x3.webp'
 import { Button, ButtonTheme } from 'shared/ui/Button/Button'
 import { ImageSources, Picture } from 'shared/ui/Picture/Picture'
+import { Text } from 'shared/ui/Text/Text'
 import { Title, TitleVariant } from 'shared/ui/Title/Title'
 
 import classes from './MainBanner.module.scss'
@@ -33,7 +34,7 @@ export const MainBanner: FC = memo(() => {
         <Title className={classes.BannerTitle} variant={TitleVariant.H1}>
           {t('mainBannerTitle')}
         </Title>
-        <div className={classes.BannerText}>{t('mainBannerText')}</div>
+        <Text className={classes.BannerText}>{t('mainBannerText')}</Text>
       </div>
       <div className={classes.BannerButtons}>
         <a className={classes.BannerLink} href='#services'>

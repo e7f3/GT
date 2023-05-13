@@ -24,7 +24,6 @@
   "aboutUsFeatureTitle4": "test",
   "aboutUsFeatureTitle5": "test",
   "aboutUsFeatureTitle6": "test",
-
   "aboutUsFeatureText1": "Linux, Nginx, Apache, Netfilter/iptables, DNS, Email, Backups, FreeBSD",
   "aboutUsFeatureText2": "Docker, Kubernetes, OpenStack, KVM, Proxmox, VMware, Terraform, Ansible",
   "aboutUsFeatureText3": "Zabbix, Nagios, Prometheus, Grafana, ELK Stack, Graylog",
@@ -32,5 +31,43 @@
   "aboutUsFeatureText5": "AWS, Google Cloud, Azure, Digital Ocean, Heroku, Hetzner",
   "aboutUsFeatureText6": "GitLab, GitHub, Bitbucket, Jenkins, TeamCity, Sonar",
   "aboutUsFooterText": "test",
-  "aboutUsFooterButton": "test"
+  "aboutUsFooterButton": "test",
+  "ourClientsTitle": "test",
+  "ourClientsText": "test",
+  "ourClientsListTitle": "test",
+  "ourClientsListItem1": "test",
+  "ourClientsListItem2": "test",
+  "ourClientsListItem3": "test",
+  "ourClientsListItem4": "test",
+  "ourClientsListItem5": "test",
+  "ourClientsListItem6": "test",
+  "ourClientsListItem7": "test",
+  "ourClientsListItem8": "test",
+  "ourClientsListItem9": "test",
+
+
+  "servicesTitle": "We offer you three main services...",
+  "servicesText": "Support has a fixed cost per month. Outsourcing and Consulting are paid based on the hours of work of engineers",
+  "serviceCardTitle1": "Consulting",
+  "serviceCardText1": "Provision of specialist advice and information support for your project",
+  "serviceCardPriceTitle1": "",
+
+  "serviceCardPrice1": "60$",
+  "serviceCardPriceText1": "fixed per hour",
+  "serviceCardButtonText1": "Buy",
+  "serviceCardTitle2": "Outsourcing",
+  "serviceCardText2": "Audit, optimization, configuration and design of infrastructure — our service for your project",
+  "serviceCardPriceTitle2": "",
+
+  "serviceCardPrice2": "90$",
+  "serviceCardPriceText2": "fixed per hour",
+  "serviceCardButtonText2": "Buy",
+  "serviceCardTitle3": "Support",
+  "serviceCardText3": "24/7 technical support of your project by our engineers",
+  "serviceCardPriceTitle3": "From",
+  "serviceCardPrice3": "1000$",
+  "serviceCardPriceText3": "for small projects",
+  "serviceCardButtonText3": "Discuss",
+  "servicesFooterText": "Pay only for what you need - mix your own tariff plan",
+  "servicesFooterButton": "Detail the price"
 }

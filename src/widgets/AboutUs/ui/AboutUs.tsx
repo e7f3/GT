@@ -15,6 +15,7 @@ import AboutUs2PngX3 from 'shared/assets/images/AboutUs/AboutUsImage2-x3.png'
 import AboutUs2WebpX3 from 'shared/assets/images/AboutUs/AboutUsImage2-x3.webp'
 import { Button, ButtonColorScheme } from 'shared/ui/Button/Button'
 import { Picture, ImageSources } from 'shared/ui/Picture/Picture'
+import { Text } from 'shared/ui/Text/Text'
 import { Title, TitleVariant } from 'shared/ui/Title/Title'
 
 import classes from './AboutUs.module.scss'
@@ -60,12 +61,12 @@ const features2: Feature[] = [
 export const AboutUs: FC = memo(() => {
   const { t } = useTranslation()
   return (
-    <div className={classes.AboutUs}>
+    <div className={classes.AboutUs} id='aboutUs'>
       <div className={classes.Header}>
         <Title className={classes.Title} variant={TitleVariant.H2}>
           {t('aboutUsTitle')}
         </Title>
-        <div className={classes.Text}>{t('aboutUsText')}</div>
+        <Text className={classes.Text}>{t('aboutUsText')}</Text>
       </div>
       <div className={classes.Info}>
         <div className={classes.ImageWrapper}>
@@ -86,7 +87,7 @@ export const AboutUs: FC = memo(() => {
                   <h3 className={classes.FeatureTitle}>{t(titleKey)}</h3>
                 </div>
                 <div className={classes.FeatureBody}>
-                  <div className={classes.FeatureText}>{t(textKey)}</div>
+                  <Text className={classes.FeatureText}>{t(textKey)}</Text>
                 </div>
               </div>
             )
@@ -100,7 +101,7 @@ export const AboutUs: FC = memo(() => {
                   <h3 className={classes.FeatureTitle}>{t(titleKey)}</h3>
                 </div>
                 <div className={classes.FeatureBody}>
-                  <div className={classes.FeatureText}>{t(textKey)}</div>
+                  <Text className={classes.FeatureText}>{t(textKey)}</Text>
                 </div>
               </div>
             )

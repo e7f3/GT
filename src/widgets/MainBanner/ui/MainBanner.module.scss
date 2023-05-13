@@ -8,19 +8,13 @@
 .BannerInfo {
   display: flex;
   flex-direction: column;
+  row-gap: 15px;
 }
 
 .BannerTitle {
   max-width: 600px;
 
   color: var(--primary-color);
-}
-
-.BannerText {
-  margin-top: 15px;
-
-  color: var(--primary-color);
-  font: var(--font-extra-xs);
 }
 
 .BannerButtons {
@@ -158,10 +152,6 @@
     margin-top: 100px;
   }
 
-  .BannerText {
-    font: var(--font-extra-s);
-  }
-
   .BannerButtons {
     margin-top: 75px;
   }
@@ -189,11 +179,6 @@
 
   .BannerTitle {
     max-width: 840px;
-  }
-
-  .BannerText {
-    font-size: 23px;
-    line-height: 23px;
   }
 
   .BannerImage {

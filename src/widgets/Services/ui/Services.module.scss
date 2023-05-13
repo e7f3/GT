@@ -1,0 +1,407 @@
+.Services {
+  display: flex;
+  flex-direction: column;
+}
+
+.Header {
+  display: flex;
+  flex-direction: column;
+  row-gap: 15px;
+
+  max-width: 670px;
+}
+
+.Cards {
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+  row-gap: 60px;
+
+  margin: 35px auto 70px;
+}
+
+.Card {
+  display: flex;
+  flex-direction: column;
+  row-gap: 200px;
+  justify-content: center;
+  align-items: center;
+
+  max-width: 345px;
+  padding: 35px 20px 75px;
+
+  border-style: solid;
+  border-width: 2px;
+  border-image-slice: 1;
+}
+
+.CardInfo {
+  display: flex;
+  flex-direction: column;
+  row-gap: 25px;
+}
+
+.CardTitle {
+  color: transparent;
+  font-weight: 400;
+  font-size: 40px;
+  font-family: var(--font-family-main);
+  line-height: 46px;
+
+  background-clip: text;
+}
+
+.CardPrice {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  color: var(--primary-color);
+}
+
+.CardPriceTitle {
+  font-weight: 700;
+  font-size: 20px;
+  font-family: var(--font-family-main);
+  line-height: 23px;
+}
+
+.CardPriceAmount {
+  font-weight: 700;
+  font-size: 60px;
+  font-family: var(--font-family-main);
+  line-height: 69px;
+}
+
+.CardPriceTextPrefix {
+  font-weight: 700;
+}
+
+.CardPriceText {
+  font-weight: 400;
+  font-size: 20px;
+  font-family: var(--font-family-main);
+  line-height: 23px;
+}
+
+.CardLink {
+  margin-top: 40px;
+
+  text-decoration: none;
+}
+
+.CardButton {
+  width: 150px;
+}
+
+.Card:nth-of-type(n) {
+  border-image-source: var(--gradient-4);
+}
+
+.Card:nth-of-type(n) .CardTitle {
+  background-image: var(--gradient-4);
+}
+
+.Card:nth-of-type(n) .CardButton {
+  border-image-source: var(--gradient-4);
+
+  background-image: var(--gradient-4);
+}
+
+.Card:nth-of-type(n) .CardButton::after {
+  border-image-source: var(--gradient-4);
+
+  background-image: var(--gradient-4);
+}
+
+.Card:nth-of-type(2n) {
+  border-image-source: var(--gradient-1);
+}
+
+.Card:nth-of-type(2n) .CardTitle {
+  background-image: var(--gradient-1);
+}
+
+.Card:nth-of-type(2n) .CardButton {
+  border-image-source: var(--gradient-1);
+
+  background-image: var(--gradient-1);
+}
+
+.Card:nth-of-type(2n) .CardButton::after {
+  border-image-source: var(--gradient-1);
+
+  background-image: var(--gradient-1);
+}
+
+.Card:nth-of-type(3n) {
+  border-image-source: var(--gradient-2);
+}
+
+.Card:nth-of-type(3n) .CardTitle {
+  background-image: var(--gradient-2);
+}
+
+.Card:nth-of-type(3n) .CardButton {
+  border-image-source: var(--gradient-2);
+
+  background-image: var(--gradient-2);
+}
+
+.Card:nth-of-type(3n) .CardButton::after {
+  border-image-source: var(--gradient-2);
+
+  background-image: var(--gradient-2);
+}
+
+.Footer {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+  justify-content: center;
+  align-items: center;
+
+  margin: 0 calc(-1 * var(--template-indent));
+  padding: 35px 25px 20px;
+
+  background-image: var(--gradient-11);
+}
+
+.FooterText {
+  color: var(--primary-color);
+  font-size: 23px;
+  font-family: var(--font-family-main);
+  line-height: 26px;
+  text-align: center;
+}
+
+.FooterLink {
+  text-decoration: none;
+}
+
+.Footer .FooterButton {
+  border-image-source: var(--gradient-2);
+
+  background-image: var(--gradient-2);
+}
+
+.Footer .FooterButton::after {
+  border-image-source: var(--gradient-2);
+
+  background-image: var(--gradient-2);
+}
+
+@media only screen and (min-width: 744px) {
+  .Cards {
+    margin: 55px auto 70px;
+  }
+
+  .Footer {
+    padding: 25px;
+  }
+
+  .FooterText {
+    font-size: 25px;
+    line-height: 28px;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .Services {
+    --card-height: 310px;
+    --footer-height: 180px;
+    --footer-button-width: 200px;
+  }
+
+  .Cards {
+    position: relative;
+
+    margin: 90px 0 calc(0.5 * var(--card-height))
+      calc(0.5 * var(--template-indent));
+  }
+
+  .Cards::before {
+    position: absolute;
+    top: calc(0.5 * var(--card-height));
+    left: calc(-1 * var(--template-indent));
+    content: '';
+
+    width: 2px;
+    height: calc(100% + 0.66 * var(--footer-height));
+
+    background-image: var(--gradient-12);
+  }
+
+  .Card {
+    position: relative;
+
+    flex-direction: row;
+    justify-content: space-between;
+
+    width: 100%;
+    height: var(--card-height);
+    max-width: unset;
+    padding: 55px 90px;
+  }
+
+  .Card::before {
+    position: absolute;
+    top: 50%;
+    left: calc(-1 * var(--template-indent));
+    content: '';
+
+    width: var(--template-indent);
+    height: 2px;
+  }
+
+  .Card:nth-of-type(n)::before {
+    background-color: var(--gradient-4-color-1);
+  }
+
+  .Card:nth-of-type(2n)::before {
+    background-color: var(--gradient-1-color-1);
+  }
+
+  .Card:nth-of-type(3n)::before {
+    background-color: var(--gradient-2-color-1);
+  }
+
+  .CardInfo {
+    max-width: 310px;
+  }
+
+  .CardLink {
+    margin-top: 25px;
+  }
+
+  .CardButton {
+    width: 165px;
+  }
+
+  .Footer {
+    position: relative;
+
+    row-gap: 30px;
+
+    height: var(--footer-height);
+  }
+
+  .Footer::before {
+    position: absolute;
+    top: calc(0.66 * var(--footer-height));
+    left: calc(0.5 * var(--template-indent));
+    content: '';
+
+    width: calc(
+      (100% - var(--template-indent) - var(--footer-button-width)) / 2
+    );
+    height: 2px;
+
+    background-color: var(--gradient-2-color-1);
+  }
+
+  .FooterText {
+    font-size: 30px;
+    line-height: 34px;
+  }
+
+  .FooterButton {
+    width: var(--footer-button-width);
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .Cards {
+    margin-top: 45px;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .Services {
+    --footer-height: 250px;
+    --footer-button-width: 220px;
+  }
+
+  .CardInfo {
+    max-width: 400px;
+  }
+
+  .CardButton {
+    width: 220px;
+  }
+
+  .FooterText {
+    font-size: 37px;
+    line-height: 43px;
+  }
+}
+
+@media only screen and (min-width: 1920px) {
+  .Services {
+    --footer-height: 220px;
+    --footer-button-width: 256px;
+  }
+
+  .Header {
+    max-width: 750px;
+  }
+
+  .Cards {
+    margin-top: 110px;
+    margin-left: calc(0.25 * var(--template-indent));
+  }
+
+  .Cards::before {
+    left: calc(-0.5 * var(--template-indent));
+  }
+
+  .Card::before {
+    left: calc(-0.5 * var(--template-indent));
+
+    width: calc(0.5 * var(--template-indent));
+  }
+
+  .Footer::before {
+    left: calc(0.75 * var(--template-indent));
+
+    width: calc(
+      (100% - var(--template-indent) * 1.5 - var(--footer-button-width)) / 2
+    );
+  }
+
+  .FooterText {
+    font-size: 40px;
+    line-height: 46px;
+  }
+}
+
+@media only screen and (min-width: 2560px) {
+  .Services {
+    --footer-height: 300px;
+  }
+
+  .Card {
+    padding: 80px 130px;
+  }
+
+  .CardInfo {
+    max-width: 560px;
+  }
+
+  .CardPrice {
+    margin-right: 115px;
+  }
+
+  .CardTitle {
+    font-size: 45px;
+    line-height: 51px;
+  }
+
+  .Footer {
+    row-gap: 40px;
+  }
+
+  .FooterText {
+    font-size: 45px;
+    line-height: 51px;
+  }
+}

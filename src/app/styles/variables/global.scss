@@ -49,26 +49,92 @@
   --primary-color-30: rgb(255 255 255 / 30%);
   --secondary-color: #000;
   --extra-color: #22e335;
+  --gradient-1-color-1: #0f6;
+  --gradient-1-color-2: #0091e2;
+  --gradient-2-color-1: #0ff;
+  --gradient-2-color-2: #ff18e8;
+  --gradient-3-color-1: #00ff47;
+  --gradient-3-color-2: #6d00c2;
+  --gradient-4-color-1: #ffec41;
+  --gradient-4-color-2: #ff6b00;
+  --gradient-5-color-1: #14ff00;
+  --gradient-5-color-2: #db01ff;
+  --gradient-6-color-1: #00ff19;
+  --gradient-6-color-2: #940097;
+  --gradient-7-color-1: #17ff6b;
+  --gradient-7-color-2: #00a6da;
+  --gradient-8-color-1: #250d23;
+  --gradient-8-color-2: #8d18e8;
+  --gradient-9-color-1: #77cc4f;
+  --gradient-9-color-2: #2f469b;
+  --gradient-9-color-3: #8c18e8;
+  --gradient-10-color-1: #05e070;
+  --gradient-10-color-2: #8e00910d;
+  --gradient-11-color-1: #9400970d;
+  --gradient-11-color-2: #0191e3;
 
   // Gradients
-  --gradient-1: linear-gradient(94.59deg, #0f6 0.84%, #0091e2 75.46%);
-  --gradient-2: linear-gradient(90deg, #0ff -32.31%, #ff18e8 139.23%);
-  --gradient-3: linear-gradient(94.35deg, #00ff47 -10.47%, #6d00c2 102.48%);
-  --gradient-4: linear-gradient(65.29deg, #ffec41 14.23%, #ff6b00 68.42%);
-  --gradient-5: linear-gradient(180deg, #14ff00 0%, #db01ff 100%);
-  --gradient-6: linear-gradient(93.03deg, #00ff19 19.64%, #940097 74.47%);
-  --gradient-7: linear-gradient(90deg, #17ff6b -12.5%, #00a6da 111.25%);
-  --gradient-8: linear-gradient(90deg, #250d23 -32.31%, #8d18e8 139.23%);
+  --gradient-1: linear-gradient(
+    94.59deg,
+    var(--gradient-1-color-1) 0.84%,
+    var(--gradient-1-color-2) 75.46%
+  );
+  --gradient-2: linear-gradient(
+    90deg,
+    var(--gradient-2-color-1) -32.31%,
+    var(--gradient-2-color-2) 139.23%
+  );
+  --gradient-3: linear-gradient(
+    94.35deg,
+    var(--gradient-3-color-1) -10.47%,
+    var(--gradient-3-color-2) 102.48%
+  );
+  --gradient-4: linear-gradient(
+    65.29deg,
+    var(--gradient-4-color-1) 14.23%,
+    var(--gradient-4-color-2) 68.42%
+  );
+  --gradient-5: linear-gradient(
+    180deg,
+    var(--gradient-5-color-1) 0%,
+    var(--gradient-5-color-2) 100%
+  );
+  --gradient-6: linear-gradient(
+    93.03deg,
+    var(--gradient-6-color-1) 19.64%,
+    var(--gradient-6-color-2) 74.47%
+  );
+  --gradient-7: linear-gradient(
+    90deg,
+    var(--gradient-7-color-1) -12.5%,
+    var(--gradient-7-color-2) 111.25%
+  );
+  --gradient-8: linear-gradient(
+    90deg,
+    var(--gradient-8-color-1) -32.31%,
+    var(--gradient-8-color-2) 139.23%
+  );
   --gradient-9: linear-gradient(
     90deg,
-    #77cc4f 6.4%,
-    #2f469b 39.02%,
-    #8c18e8 69.85%
+    var(--gradient-9-color-1) 6.4%,
+    var(--gradient-9-color-2) 39.02%,
+    var(--gradient-9-color-3) 69.85%
   );
   --gradient-10: linear-gradient(
     93.87deg,
-    #05e070 -3.32%,
-    rgb(142 0 145 / 5%) 105.89%
+    var(--gradient-10-color-1) -3.32%,
+    var(--gradient-10-color-2) 105.89%
+  );
+  --gradient-11: linear-gradient(
+    94.13deg,
+    var(--gradient-11-color-1) -3.39%,
+    var(--gradient-11-color-2) 116.19%
+  );
+  --gradient-12: linear-gradient(
+    180deg,
+    var(--gradient-4-color-1) 11.57%,
+    var(--gradient-1-color-1) 43.96%,
+    var(--gradient-2-color-1) 60.39%
   );
 
   // Transitions

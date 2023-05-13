@@ -36,7 +36,6 @@ export const Footer: FC = memo(() => {
         <Title className={classes.FooterTitle} variant={TitleVariant.H2}>
           {t('footerTitle')}
         </Title>
-        {/* <h2 className={classes.FooterTitle}>{t('footerTitle')}</h2> */}
         <div className={classes.FooterText}>{t('footerText')}</div>
         <ContactForm className={classes.FooterForm} />
       </div>

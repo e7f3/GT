@@ -1,0 +1,18 @@
+.Text {
+  color: var(--primary-color);
+  font: var(--font-extra-xs);
+  font-weight: 400;
+}
+
+@media only screen and (min-width: 1920px) {
+  .Text {
+    font: var(--font-extra-s);
+  }
+}
+
+@media only screen and (min-width: 2560px) {
+  .Text {
+    font-size: 23px;
+    line-height: 23px;
+  }
+}
