@@ -7,7 +7,7 @@
 
   width: 100%;
   margin: 0;
-  padding: 0 var(--footer-indent) 60px;
+  padding: 120px var(--footer-indent) 60px;
 }
 
 .FooterContacts {
@@ -83,6 +83,10 @@
 }
 
 @media only screen and (min-width: 744px) {
+  .Footer {
+    padding-top: 180px;
+  }
+
   .FooterText {
     max-width: 400px;
     margin-top: 30px;
@@ -124,6 +128,7 @@
 
 @media only screen and (min-width: 1024px) {
   .Footer {
+    padding-top: 250px;
     padding-bottom: 135px;
   }
 
@@ -145,6 +150,7 @@
     flex-flow: row wrap;
     justify-content: space-between;
 
+    padding-top: 220px;
     padding-bottom: 60px;
   }
 
@@ -211,6 +217,10 @@
 }
 
 @media only screen and (min-width: 1920px) {
+  .Footer {
+    padding-top: 365px;
+  }
+
   .FooterText {
     margin-top: 15px;
 

@@ -3,7 +3,7 @@
   flex-direction: column;
   row-gap: 25px;
 
-  padding: 80px 0 90px;
+  padding-top: 80px;
 }
 
 .AsciiBorder {
@@ -170,7 +170,7 @@
 
 @media only screen and (min-width: 744px) {
   .OurClients {
-    padding: 35px 0 100px;
+    padding-top: 35px;
   }
 
   .ClientsListWrapper {
@@ -190,7 +190,7 @@
 
 @media only screen and (min-width: 1024px) {
   .OurClients {
-    padding: 100px 0;
+    padding-top: 100px;
   }
 
   .Header {
@@ -220,7 +220,7 @@
 
 @media only screen and (min-width: 1280px) {
   .OurClients {
-    padding: 65px 0 100px;
+    padding-top: 65px;
   }
 
   .ClientsListWrapper {
@@ -232,7 +232,7 @@
   .OurClients {
     row-gap: 45px;
 
-    padding: 100px 0;
+    padding-top: 100px;
   }
 
   .AsciiBorder {
@@ -256,7 +256,7 @@
   .OurClients {
     row-gap: 75px;
 
-    padding: 100px 0 200px;
+    padding-top: 100px;
   }
 
   .ClientsListWrapper {
@@ -283,7 +283,7 @@
   .OurClients {
     row-gap: 75px;
 
-    padding: 225px 0 300px;
+    padding-top: 225px;
   }
 
   .Header {

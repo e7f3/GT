@@ -79,6 +79,8 @@
 
   background: var(--gradient-1);
   background-clip: text;
+  // stylelint-disable-next-line
+  -webkit-background-clip: text;
 }
 
 .PrincipleBody {
@@ -128,6 +130,8 @@
   .Principle:nth-of-type(2n) .PrincipleTitle {
     background: var(--gradient-2);
     background-clip: text;
+    // stylelint-disable-next-line
+    -webkit-background-clip: text;
   }
 
   .WorkflowImage {

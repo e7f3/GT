@@ -1,6 +1,8 @@
 .Services {
   display: flex;
   flex-direction: column;
+
+  padding-top: 90px;
 }
 
 .Header {
@@ -194,6 +196,10 @@
 }
 
 @media only screen and (min-width: 744px) {
+  .Services {
+    padding-top: 100px;
+  }
+
   .Cards {
     margin: 55px auto 70px;
   }
@@ -227,6 +233,7 @@
     top: calc(0.5 * var(--card-height));
     left: calc(-1 * var(--template-indent));
     content: '';
+    z-index: 2;
 
     width: 2px;
     height: calc(100% + 0.66 * var(--footer-height));
@@ -342,6 +349,8 @@
   .Services {
     --footer-height: 220px;
     --footer-button-width: 256px;
+
+    padding-top: 200px;
   }
 
   .Header {
@@ -380,6 +389,8 @@
 @media only screen and (min-width: 2560px) {
   .Services {
     --footer-height: 300px;
+
+    padding-top: 300px;
   }
 
   .Card {
