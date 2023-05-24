@@ -38,10 +38,33 @@
 }
 
 @media only screen and (min-width: 744px) {
+  // .Header {
+  //   grid-template-columns: max-content 1fr max-content;
+
+  //   margin-bottom: unset;
+  // }
+
+  // .HeaderNavbar {
+  //   position: relative;
+  //   top: unset;
+  //   left: unset;
+  //   right: unset;
+
+  //   flex-wrap: nowrap;
+
+  //   width: fit-content;
+  //   margin-left: auto;
+  //   padding: unset;
+  // }
+}
+
+@media only screen and (min-width: 1024px) {
   .Header {
     grid-template-columns: max-content 1fr max-content;
+    gap: 50px;
 
     margin-bottom: unset;
+    padding-bottom: 25px;
   }
 
   .HeaderNavbar {
@@ -55,14 +78,6 @@
     width: fit-content;
     margin-left: auto;
     padding: unset;
-  }
-}
-
-@media only screen and (min-width: 1024px) {
-  .Header {
-    gap: 50px;
-
-    padding-bottom: 25px;
   }
 }
 
