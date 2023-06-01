@@ -1,4 +1,4 @@
-import { FC, ImgHTMLAttributes, useMemo } from 'react'
+import { FC, ImgHTMLAttributes, memo, useMemo } from 'react'
 
 export enum ImageScale {
   '0.5x' = '0,5x',
@@ -19,7 +19,7 @@ interface PictureProps extends ImgHTMLAttributes<HTMLImageElement> {
   src: string
 }
 
-export const Picture: FC<PictureProps> = (props) => {
+export const Picture: FC<PictureProps> = memo((props) => {
   const { className, pngSources, webpSources, alt, src, ...restProps } = props
 
   const pngSrc = useMemo(() => {
@@ -52,4 +52,4 @@ export const Picture: FC<PictureProps> = (props) => {
       <img className={className} src={src} alt={alt} {...restProps} />
     </picture>
   )
-}
+})

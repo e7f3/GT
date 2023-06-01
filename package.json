@@ -14,6 +14,7 @@
     "storybook:build": "build-storybook -c ./config/storybook -s ./public"
   },
   "dependencies": {
+    "@emailjs/browser": "^3.11.0",
     "i18next": "^22.4.14",
     "i18next-browser-languagedetector": "^7.0.1",
     "i18next-http-backend": "^2.2.0",
@@ -40,6 +41,7 @@
     "@svgr/webpack": "^7.0.0",
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^14.0.0",
+    "@types/dotenv-webpack": "^7.0.4",
     "@types/jest": "^29.5.0",
     "@types/react": "^18.0.31",
     "@types/react-dom": "^18.0.11",
@@ -50,6 +52,7 @@
     "@typescript-eslint/parser": "^5.57.0",
     "babel-loader": "^9.1.2",
     "css-loader": "^6.7.3",
+    "dotenv-webpack": "^8.0.1",
     "eslint": "^8.37.0",
     "eslint-config-airbnb": "^19.0.4",
     "eslint-config-airbnb-typescript": "^17.0.0",

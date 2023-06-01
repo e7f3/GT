@@ -30,3 +30,8 @@ declare module '*.webp'
 
 declare const __IS_DEV__: boolean
 declare const __PROJECT__: 'frontend' | 'jest'
+
+declare const __API_SERVICE_KEY__: string
+declare const __API_TEMPLATE_KEY__: string
+declare const __API_PUBLIC_KEY__: string
+

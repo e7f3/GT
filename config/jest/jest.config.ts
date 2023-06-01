@@ -44,6 +44,9 @@ export default {
   globals: {
     __IS_DEV__: true,
     __PROJECT__: 'jest',
+    __API_SERVICE_KEY__: '',
+    __API_TEMPLATE_KEY__: '',
+    __API_PUBLIC_KEY__: '',
   },
 
   modulePaths: ['<rootDir>/src'],

@@ -32,6 +32,9 @@ module.exports = ({ config }: { config: Configuration }) => {
     new DefinePlugin({
       __IS_DEV__: JSON.stringify(true),
       __PROJECT__: JSON.stringify('storybook'),
+      __API_SERVICE_KEY__: JSON.stringify(''),
+      __API_TEMPLATE_KEY__: JSON.stringify(''),
+      __API_PUBLIC_KEY__: JSON.stringify(''),
     })
   )
 

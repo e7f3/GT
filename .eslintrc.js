@@ -116,13 +116,16 @@ module.exports = {
   rules: esRules,
   globals: {
     __IS_DEV__: true,
-    __PROJECT__: true
+    __PROJECT__: true,
+    __API_SERVICE_KEY__: '',
+    __API_TEMPLATE_KEY__: '',
+    __API_PUBLIC_KEY__: '',
   },
   overrides: [
     {
       files: ['**/*.js'],
       rules: {
-        "consistent-return": 'off'
+        'consistent-return': 'off',
       },
     },
     {

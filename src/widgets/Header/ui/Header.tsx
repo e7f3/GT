@@ -11,7 +11,7 @@ export const Header: FC = memo(() => {
     <div className={classes.Header}>
       <Logo />
       <Navbar className={classes.HeaderNavbar} />
-      <LanguageSwitcher className={classes.HeaderSwitcher} />
+      {/* <LanguageSwitcher className={classes.HeaderSwitcher} /> */}
     </div>
   )
 })
