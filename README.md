@@ -1,15 +1,4 @@
-# template-react (React TypeScript Starter Template)
-
-This starter template is designed for building modern React applications with TypeScript. It includes pre-configured settings for Webpack, ESLint, Stylelint, Jest, and Storybook.
-
-## Features
-
-- React with TypeScript
-- Webpack for bundling and build optimizations
-- ESLint for JavaScript and TypeScript code linting
-- Stylelint for CSS code linting
-- Jest for unit testing
-- Storybook for developing and showcasing UI components in isolation
+# GT
 
 ## Getting Started
 
@@ -24,7 +13,7 @@ Before getting started, make sure you have the following software installed on y
 
 1. Clone the repository:
 
-`git clone https://github.com/e7f3/template-react.git`
+`git clone https://github.com/e7f3/GT.git`
 
 
 2. Install dependencies:
