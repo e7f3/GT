@@ -45,7 +45,6 @@
   "ourClientsListItem8": "test",
   "ourClientsListItem9": "test",
 
-
   "servicesTitle": "We offer you three main services...",
   "servicesText": "Support has a fixed cost per month. Outsourcing and Consulting are paid based on the hours of work of engineers",
   "serviceCardTitle1": "Consulting",
@@ -90,5 +89,7 @@
   "ourBenefitsListItemTitle4": "It’s cheaper",
   "ourBenefitsListItemText4": "For small projects, 24/7 technical support is cheaper than hiring individuals",
   "ourBenefitsListItemTitle5": "It’s easier",
-  "ourBenefitsListItemText5": "Staff turnover, vacations, sick days and employee replacements are no longer your problem"
+  "ourBenefitsListItemText5": "Staff turnover, vacations, sick days and employee replacements are no longer your problem",
+  "sentContactsSuccessfully": "Sent successfully!",
+  "sentContactsWithError": "Oops, there was an error!"
 }

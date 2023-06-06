@@ -15,6 +15,8 @@ export function buildPlugins({
   const plugins = [
     new HtmlWebpackPlugin({
       template: paths.html,
+      favicon: 'src/shared/assets/icons/favicon.ico',
+      title: 'GT IT — DevOps Support and Outsourcing',
     }),
     new MiniCssExtractPlugin({
       filename: 'css/[name].[contenthash:8].css',
@@ -22,13 +24,9 @@ export function buildPlugins({
     }),
     new webpack.ProgressPlugin(),
     new Dotenv(),
-
     new webpack.DefinePlugin({
       __IS_DEV__: JSON.stringify(isDev),
       __PROJECT__: JSON.stringify(project),
-      // __API_SERVICE_KEY__: JSON.stringify(process?.env?.serviceKey),
-      // __API_TEMPLATE_KEY__: JSON.stringify(apiKeys?.templateKey),
-      // __API_PUBLIC_KEY__: JSON.stringify(apiKeys?.publicKey),
     }),
   ]
 

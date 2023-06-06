@@ -87,6 +87,8 @@
 
   background: var(--gradient-1);
   background-clip: text;
+  // stylelint-disable-next-line
+  -webkit-background-clip: text;
 }
 
 .BenefitBody {

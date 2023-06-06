@@ -1,13 +1,5 @@
 import emailjs from '@emailjs/browser'
-import {
-  FC,
-  FormEvent,
-  MouseEvent,
-  memo,
-  useCallback,
-  useRef,
-  useState,
-} from 'react'
+import { FC, FormEvent, memo, useCallback, useRef, useState } from 'react'
 import { useTranslation } from 'react-i18next'
 
 import { classNames } from 'shared/lib/classNames/classNames'
@@ -34,16 +26,25 @@ export const ContactForm: FC<ContactFormProps> = memo((props) => {
 
   const onChange = useCallback((newValue: string) => setValue(newValue), [])
 
-  const onClick = useCallback((event: FormEvent<HTMLFormElement>) => {
+  const onSubmit = useCallback((event: FormEvent<HTMLFormElement>) => {
     try {
       event.preventDefault()
       if (formRef.current) {
-        emailjs.sendForm(
-          SERVICE_KEY,
-          TEMPLATE_KEY,
-          event.target as HTMLFormElement,
-          PUBLIC_KEY
-        )
+        emailjs
+          .sendForm(
+            SERVICE_KEY,
+            TEMPLATE_KEY,
+            event.target as HTMLFormElement,
+            PUBLIC_KEY
+          )
+          .then(
+            (res) => {
+              alert(t('sentContactsSuccessfully'))
+            },
+            (err) => {
+              alert(t('sentContactsWithError'))
+            }
+          )
       }
     } catch (error) {
       console.log(error)
@@ -55,7 +56,7 @@ export const ContactForm: FC<ContactFormProps> = memo((props) => {
       className={classNames(classes.ContactForm, {}, [className])}
       id={id}
       ref={formRef}
-      onSubmit={onClick}
+      onSubmit={onSubmit}
     >
       <Input
         className={classes.ContactFormInput}
@@ -63,6 +64,7 @@ export const ContactForm: FC<ContactFormProps> = memo((props) => {
         onChange={onChange}
         value={value}
         name="email"
+        type="email"
       />
       <Button
         className={classes.ContactFormButton}
