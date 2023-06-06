@@ -8,6 +8,8 @@ import { Input } from 'shared/ui/Input/Input'
 
 import classes from './ContactForm.module.scss'
 
+import Checkmark from 'shared/assets/images/FooterCheckmark/Checkmark.png'
+
 interface ContactFormProps {
   className?: string
   id?: string
@@ -23,6 +25,7 @@ export const ContactForm: FC<ContactFormProps> = memo((props) => {
   const formRef = useRef<HTMLFormElement>(null)
 
   const [value, setValue] = useState<string>('')
+  const [showCheckmark, setShowCheckmark] = useState<boolean>(false)
 
   const onChange = useCallback((newValue: string) => setValue(newValue), [])
 
@@ -39,10 +42,10 @@ export const ContactForm: FC<ContactFormProps> = memo((props) => {
           )
           .then(
             (res) => {
-              alert(t('sentContactsSuccessfully'))
+              setShowCheckmark(true)
             },
             (err) => {
-              alert(t('sentContactsWithError'))
+              console.log('Oops!')
             }
           )
       }
@@ -66,6 +69,9 @@ export const ContactForm: FC<ContactFormProps> = memo((props) => {
         name="email"
         type="email"
       />
+      {showCheckmark && (
+        <img className={classes.Checkmark} src={Checkmark} alt="check" />
+      )}
       <Button
         className={classes.ContactFormButton}
         colorScheme={ButtonColorScheme.ALTERNATIVE}
